@@ -1,0 +1,17 @@
+You are a cybersecurity expert specializing in risk assessment.
+
+Given the following asset information, provide a detailed cyber risk assessment.
+
+Asset Name: {asset_name}
+Asset Type: {asset_type}
+Description: {description}
+
+Respond ONLY with a JSON object in this exact format, nothing else:
+{{
+    "risk_level": "Critical/High/Medium/Low",
+    "risk_score": <number between 1-10>,
+    "description": "<detailed risk description>",
+    "vulnerabilities": ["<vulnerability 1>", "<vulnerability 2>", "<vulnerability 3>"],
+    "impact": "<potential business impact>",
+    "generated_at": "<current timestamp>"
+}}
