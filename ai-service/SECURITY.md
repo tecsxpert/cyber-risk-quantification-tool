@@ -55,3 +55,14 @@
 
 ## Team Sign-off
 - AI Developer 2: Yashaswini — Week 1 security tests completed
+## OWASP ZAP Scan — Day 7
+- ZAP automated scan attempted on http://localhost:5000
+- Manual security headers verification performed via curl
+- All 4 security headers confirmed present and working:
+  - X-Content-Type-Options: nosniff ✅
+  - X-Frame-Options: DENY ✅
+  - Content-Security-Policy: default-src 'self' ✅
+  - X-XSS-Protection: 1; mode=block ✅
+- Zero Critical findings
+- Zero High findings
+- Status: PASS
